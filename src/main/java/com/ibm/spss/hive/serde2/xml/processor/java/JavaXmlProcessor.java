@@ -62,7 +62,7 @@ public class JavaXmlProcessor implements XmlProcessor {
 
     static {
         DOCUMENT_BUILDER_FACTORY = DocumentBuilderFactory.newInstance();
-        DOCUMENT_BUILDER_FACTORY.setNamespaceAware(true);
+        DOCUMENT_BUILDER_FACTORY.setNamespaceAware(false);
         DOCUMENT_BUILDER_FACTORY.setIgnoringComments(true);
         // Theoretically we could use setIgnoringElementContentWhitespace(true)
         // but that would require a validating parser and the schema which we do not always have.

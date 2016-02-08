@@ -103,8 +103,8 @@ public class XmlInputFormat extends TextInputFormat implements JobConfigurable {
         }
 
         private static String findProperty(JobConf jobConf, String propertyName) {
-            if (propertyName.equals(START_TAG_KEY)) return "<item>";
-            if (propertyName.equals(END_TAG_KEY)) return "</item>";
+            /*if (propertyName.equals(START_TAG_KEY)) return "<website>";
+            if (propertyName.equals(END_TAG_KEY)) return "</website>";*/
 
             if (jobConf == null) {
                 throw new IllegalArgumentException("Cannot find table property, because null was passed to record reader as JobConf parameter. Property: " + propertyName);
